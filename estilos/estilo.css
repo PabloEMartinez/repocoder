@@ -1,0 +1,386 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+header{
+
+width: 100%;
+height: 200px;
+background-color: #3d0a5f;
+background-image: linear-gradient(purple, black);
+
+}
+
+header .logo{
+
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li a{
+
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+header a:hover{
+color: black;
+
+}
+
+
+.barra{
+float: right;
+
+
+}
+
+main{ 
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Media/harley.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.flexcontenedor{
+display: flex;
+background-color: #360736;
+padding: 10px;
+border: 3px solid black;
+height: 380px;
+flex-flow: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-content: flex-start;
+
+}
+
+.flexcontenedor div {
+    background-color: #e9a2a2;
+    width: 100%;
+    margin: 10px;
+    border: 3px solid black;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 30px;
+text-align: center;
+text-shadow: 1px 1px 1px #000000;
+
+
+
+}
+
+
+.gridcontenedor{
+display: grid;
+background-color: #e9a2a2;
+grid-template-areas: 'header header header';
+grid-template-columns: auto auto auto;
+grid-template-rows: 200px 200px 200px;
+border: 2px solid purple t;
+height: auto; }
+
+
+.gridcontenedor div {
+background-color: white;
+border: 2px solid black;
+height: auto;
+
+
+
+}
+
+.item1 {
+grid-area: header;
+font-size: 45px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+text-shadow: 5px 5px 5px black;
+padding: 30px;
+background-size: cover;
+background-position: center;}
+
+.item2{
+background-image: url(../Media/honda\ 2.png);
+background-size: contain;
+background-position: center;}
+
+
+.item2:hover {
+transform: scale(1.5);
+
+
+}
+
+.item3{
+background-image: url(../Media/vespa\ 2.png);
+background-size: cover;
+background-position: center;}
+
+.item4{  
+background-image: url(../Media/rouser.jpg);
+background-size: contain;
+background-position: center;}
+
+
+.item4{
+transition: height 2.7s;}
+
+
+
+.item4:hover {
+height: 300px;
+
+}
+
+.item5{background-image: url(../Media/kawasaki\ 2.png);
+    background-size: cover;
+    background-position: center;}
+
+
+    
+.item6{background-image: url(../Media/yamaha.jpg);
+    background-size: cover;
+    background-position: center;}
+
+
+
+
+.item6:hover {
+transform: translateY(100px)
+
+
+}
+
+.item7{background-image: url(../Media/gilera3.png);
+    background-size: cover;
+    background-position: center;}
+
+
+.item7:hover{
+transform: rotate(-280deg);
+
+
+}
+
+footer{ 
+ 
+height: 100px;
+width:100%;
+background-color: #3d0a5f;
+background-image: linear-gradient(purple, black );
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: white;
+font-size: 25px;
+text-align: center;
+padding-top: 20px;}
+
+
+
+
+.contactoheader{
+    width: 100%;
+    height: 200px;
+    background-color: #3d0a5f;
+    text-align: right;
+
+}
+
+
+.logo2{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10px;
+    padding: 20px;
+    margin-left: 15px;
+
+
+
+}
+
+
+.dondeheader{
+    width: 100%;
+    height: 200px;
+    background-color: #3d0a5f;
+    text-align: right;
+
+
+
+}
+
+
+.dondeestamosmain{
+   height: 100vh;
+    width: 100%;
+    background-image: url(../img/harley-2430193_1920.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.donde{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10px;
+    padding: 20px;
+    margin-left: 15px;
+
+
+
+}
+
+
+.servicios2{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10px;
+    padding: 20px;
+    margin-left: 15px;
+
+
+
+
+}
+
+.servicios{
+    
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10px;
+    padding: 12px;
+    margin-left: 12px;
+
+        margin: 0;
+        padding: 0;
+
+    
+
+}
+
+.servicios3{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsl(0, 0%, 99%);
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10px;
+    padding: 12px;
+    margin-left: 12px;
+
+
+}
+
+
+.productos{
+
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hwb(0 1% 99%);
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10px;
+    padding: 12px;
+    margin-left: 12px;
+
+
+}
+
+
+.container-fluid {
+background-color: aliceblue;
+color: black;
+border: 2px solid black;
+font-size: 20px;
+text-align: left
+
+}
+
+.main-contacto {
+    background-image: url(../Media/harley.jpg.jpg);
+    background-size: cover; }
+    .main-contacto .section-contacto {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh; }
+      .main-contacto .section-contacto .section-contacto-formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+        background-color: black;
+        padding: 30px 20px 30px 20px;
+        align-items: center;
+        width: 60vh; }
+        .main-contacto .section-contacto .section-contacto-formulario .formulario-titulo {
+          font-size: 3rem;
+          padding: 10px;
+          font-family: "Montserrat", sans-serif; }
+        .main-contacto .section-contacto .section-contacto-formulario form {
+          display: flex;
+          flex-flow: column nowrap;
+          padding: 15px;
+          font-size: 1.5rem; }
+          .main-contacto .section-contacto .section-contacto-formulario form input {
+            border: 0;
+            padding: 10px 10px 0px 0px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid white;
+            background-color: black;
+            color: white; }
+            .main-contacto .section-contacto .section-contacto-formulario form input:focus {
+              outline: none;
+              background-color: rgb(71, 24, 71);
+              color: white; }
+            .main-contacto .section-contacto .section-contacto-formulario form input::placeholder {
+              color: white;
+              font-family: "Mulish", sans-serif; }
+          .main-contacto .section-contacto .section-contacto-formulario form textarea {
+            margin: 15px 0px 10px 0px;
+            font-family: "Mulish", sans-serif;
+            border: none;
+            border-bottom: 1px solid white; }
+          .main-contacto .section-contacto .section-contacto-formulario form button {
+            background-color: rgb(71, 24, 71);
+            border: 1px solid white;
+            font-family: "Mulish", sans-serif;
+            color: white;
+            margin-top: 10px;
+            padding: 5px;
+            text-align: center; }
