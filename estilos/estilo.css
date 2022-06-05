@@ -4,21 +4,33 @@
     padding: 0;
 }
 
-
-
-
 header{
 
-width: 100%;
-height: 200px;
-background-color: #3d0a5f;
-background-image: linear-gradient(purple, black);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header";
+    background-image: linear-gradient(purple, black);
+    font-size: 30px;
+    font-family: "Noto Serif Display", serif;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .navbar {
+  background-color: plum;
+  }
+  
+  .btn {
+  color: purple;
+  border:2px solid purple;
+  }
+  
 
-}
 
 header .logo{
 
-    font-size: 40px;
+    font-size: 55px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #000000;
     text-transform: uppercase;
@@ -34,7 +46,7 @@ header ul li{
 
 header ul li a{
 
-    color: aliceblue;
+    color: black;
     text-decoration: none;
     font-size: 25px;
     margin-right: 15px;
@@ -44,7 +56,7 @@ header ul li a{
 }
 
 header a:hover{
-color: black;
+color: purple;
 
 }
 
@@ -56,41 +68,166 @@ float: right;
 }
 
 main{ 
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     background-image: url(../Media/harley.jpg.jpg);
     background-size: cover;
     background-position: center;
 
 }
+.main-contacto{
 
-
-.flexcontenedor{
-display: flex;
-background-color: #360736;
-padding: 10px;
-border: 3px solid black;
-height: 380px;
-flex-flow: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-content: flex-start;
+height: 100vh ;
+width: 100%;
 
 }
 
-.flexcontenedor div {
-    background-color: #e9a2a2;
-    width: 100%;
-    margin: 10px;
-    border: 3px solid black;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 30px;
+.dondemain{
+
+  height: 100vh;
+  width: 100%;
+}
+
+.mainprod{
+
+height: 50vh;
+width: 100%;
+
+}
+
+
+.mapa{
+
 text-align: center;
-text-shadow: 1px 1px 1px #000000;
-
-
+align-items: center;
+justify-content: center;
+padding-top: 80px;
 
 }
+
+.serviciosGrids {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "local" "taller" "repuestos" "reparaciones";
+    height: 800px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding-top: 250px;
+
+
+   }
+  
+  .local, .taller, .repuestos, .reparaciones {
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    background-color: #3f053f;
+    font-size: 15px;
+    color: whitesmoke;
+
+  
+  
+  }
+  
+  .foucault {
+    grid-area: "foucault"; }
+  
+  .nietzsche {
+    grid-area: "nietzsche"; }
+  
+  .pandemia {
+    grid-area: "pandemia"; }
+  
+  .agamben {
+    grid-area: "agamben"; }
+  
+  .platon {
+    grid-area: "platon"; }
+  
+  .preciado {
+    grid-area: "preciado"; }
+  
+  .tituloProduct {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: left;
+    text-align-last: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 10px; }
+  
+  h3 {
+  
+    padding-bottom: 15px; }
+
+
+  .botonProd{
+
+    background-color: black;
+    border: 1px solid white ;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+
+  }
+
+
+  
+  /*MEDIA QUERIES PRODUCTOS*/
+@media screen and (max-width: 600px) {
+.productGrids {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "foucault" "nietzsche" "pandemia" "agamben" "platon" "preciado";
+  height: 6000px;
+  width: 100vw;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 40px; } }
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+.productGrids {
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "foucault" "nietzsche" "pandemia" "agamben" "platon" "preciado";
+  height: 2500px;
+  width: 100vw;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 40px; } }
+  
+  
+  
+  .tituloDes {
+      padding: 20px;
+      padding-bottom: 30px; 
+      color: black;
+      font-size: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+    
+
+    }
+    
+ 
 
 
 .gridcontenedor{
@@ -185,17 +322,6 @@ transform: rotate(-280deg);
 
 }
 
-footer{ 
- 
-height: 100px;
-width:100%;
-background-color: #3d0a5f;
-background-image: linear-gradient(purple, black );
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-color: white;
-font-size: 25px;
-text-align: center;
-padding-top: 20px;}
 
 
 
@@ -224,15 +350,7 @@ padding-top: 20px;}
 }
 
 
-.dondeheader{
-    width: 100%;
-    height: 200px;
-    background-color: #3d0a5f;
-    text-align: right;
 
-
-
-}
 
 
 .dondeestamosmain{
@@ -384,3 +502,17 @@ text-align: left
             margin-top: 10px;
             padding: 5px;
             text-align: center; }
+
+
+footer{ 
+ 
+height: 100px;
+width:100%;
+background-color: #3d0a5f;
+background-image: linear-gradient(purple, black );
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: white;
+font-size: 25px;
+text-align: center;
+padding-top: 20px;}
+                         
